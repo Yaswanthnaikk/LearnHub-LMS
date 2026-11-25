@@ -1,53 +1,71 @@
 # LearnHub – Learning Management System
 
-A Django-based LMS starter project with student/instructor roles, course creation, lessons, enrollment, lesson completion tracking, and a responsive interface.
+A Django-based Learning Management System for managing courses, students and learning activities.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
 ## Features
-- Register, login, and logout
-- Student and instructor accounts
-- Instructor course creation and lesson management
-- Course catalogue and course details
-- Student course enrollment
-- Lesson viewing and completion tracking
-- Student dashboard with enrolled courses and progress
-- Django admin panel
-- SQLite database for easy local setup
 
-## Setup (Windows / VS Code)
-1. Install Python 3.10+.
-2. Extract this ZIP and open the `lms_project` folder in VS Code.
-3. Open Terminal and create a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
-4. Activate it:
-   ```bash
-   venv\\Scripts\\activate
-   ```
-5. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-6. Create database tables:
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-7. Create an admin account:
-   ```bash
-   python manage.py createsuperuser
-   ```
-8. Start the server:
-   ```bash
-   python manage.py runserver
-   ```
-9. Open http://127.0.0.1:8000/
+- Course and learning activity management
+- User management
+- Django models and database integration
 
-Admin panel: http://127.0.0.1:8000/admin/
+## Tech Stack
 
-## Instructor workflow
-Register an account and choose **Instructor**. Use the instructor dashboard to create courses and add lessons.
+- **Backend:** Python, Django
+- **Database:** SQL (SQLite)
+- **Frontend:** HTML, Bootstrap
 
-## Notes
-- This is a portfolio-ready MVP, not a production deployment. Before production, configure `DEBUG=False`, a secure `SECRET_KEY`, HTTPS, email verification, file storage, backups, and stronger authorization tests.
-- SQLite is used by default. You can switch to PostgreSQL for deployment.
+## Getting Started
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Yaswanthnaikk/LearnHub-LMS.git
+cd LearnHub-LMS
+```
+
+2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate      # macOS / Linux
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Apply migrations and create an admin user
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+5. Run the server
+
+```bash
+python manage.py runserver
+```
+
+Open http://127.0.0.1:8000/ in your browser.
+
+<!-- Add screenshots here: create a "screenshots" folder in the repo, upload images, then use ![Home page](screenshots/home.png) -->
+
+## What I Learned
+
+- Designing models for users and courses
+- Django user management
+- Organizing a larger Django project
+
+## Author
+
+**Yaswanth Naik Desavath**
+[GitHub](https://github.com/Yaswanthnaikk) | [LinkedIn](https://linkedin.com/in/yaswanth-naik) | dyaswanthnaiknaik@gmail.com
